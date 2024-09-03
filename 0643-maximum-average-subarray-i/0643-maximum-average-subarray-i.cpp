@@ -9,8 +9,8 @@ public:
         }
         maxi = static_cast<double>(sum) / k;
         for (int i = k; i < n; i++) {
-            sum += nums[i] - nums[i - k];
-            maxi = max(maxi, static_cast<double>(sum) / k);
+            sum += nums[i] - nums[i-k];
+            maxi = max(maxi,static_cast<double>(sum)/k);
         }
         return maxi;
     }
